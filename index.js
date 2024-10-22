@@ -17,6 +17,9 @@ const server = http.createServer(function(req, res){
     const path = parsedURL.pathname;
     const trimmedPath = path.replace(/^\/+|\/+$/g,'');
 
+    // Get the query string as an object
+    const queryStringObject = parsedURL.query;
+
     // Get the HTTP Method
     const method = req.method.toLowerCase();
 
@@ -24,7 +27,7 @@ const server = http.createServer(function(req, res){
     res.end('Hellow World\n');
 
     //Log the request path 
-    console.log('Request received on path: '+trimmedPath+' with method: ' + method);
+    console.log('Request received on path: '+trimmedPath+' with method: ' + method+ ' with this query params', queryStringObject);
     
 });
 
