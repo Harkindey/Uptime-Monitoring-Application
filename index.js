@@ -9,26 +9,6 @@ const url = require('url');
 const StringDecoder = require('string_decoder').StringDecoder;
 
 // the server should respond to all requests with a string
-
-// Define the handlers
-let handlers = {};
-
-// Sample handler
-handlers.sample = (data,callback) => {
-    // Callback a http status code, and a payload object
-    callback(406, {'name': 'sample handler'})
-};
-
-// Not Found handler
-handlers.notFound = function (data, callback)  {
-    callback(404)
-};
-// Define a request router
-var router = {
-    'sample': handlers.sample,
-};
-
-
 const server = http.createServer(function(req, res){
 
     //Get the URL and parse it
@@ -96,3 +76,20 @@ server.listen(3000, function(){
     console.log("The Server is listening on port 3000");
 });
 
+// Define the handlers
+let handlers = {};
+
+// Sample handler
+handlers.sample = (data,callback) => {
+    // Callback a http status code, and a payload object
+    callback(406, {'name': 'sample handler'})
+};
+
+// Not Found handler
+handlers.notFound = function (data, callback)  {
+    callback(404)
+};
+// Define a request router
+var router = {
+    'sample': handlers.sample,
+};
