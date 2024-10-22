@@ -8,13 +8,15 @@ const environments = {};
 
 // Staging (defualt) environment
 environments.staging = {
-    'port': 3000,
+    'httpPort': 3000,
+    'httpsPort': 3001,
     'envName': 'staging',
 };
 
 // Production environment
 environments.production = {
-    'port': 5200,
+    'httpPort': 5200,
+    'httpsPort': 5201,
     'envName': 'production'
 };
 
