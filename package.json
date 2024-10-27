@@ -1,0 +1,26 @@
+{
+  "name": "uptime-monitoring-application",
+  "version": "1.0.0",
+  "description": "Uptime Monitoring with bare mental node",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harkindey/Uptime-Monitoring-Application.git"
+  },
+  "author": "Emmanuel Akinde",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Harkindey/Uptime-Monitoring-Application/issues"
+  },
+  "homepage": "https://github.com/Harkindey/Uptime-Monitoring-Application#readme",
+  "dependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
