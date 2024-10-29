@@ -62,6 +62,8 @@ const unifiedServer = (req,res) => {
         buffer += decorder.write(data);
     })
 
+    console.log(trimmedPath, 'trimmedPath')
+
     req.on('end', () => {
         buffer += decorder.end();
 
