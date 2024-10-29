@@ -1,1 +1,1 @@
-{"id":"f5v8qyiryra58npr97m9","userPhone":"08101597774","protocol":"http","url":"google.com","method":"get","successCodes":[200,201],"timeoutSeconds":3}
+{"id":"f5v8qyiryra58npr97m9","userPhone":"08101597774","protocol":"https","url":"yahoo.com","method":"post","successCodes":[200,201,403],"timeoutSeconds":4}
